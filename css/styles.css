@@ -1,0 +1,114 @@
+
+/*BARRA PRINCIPAL Y NAVEGACION*/
+
+.header{
+    background-color: lawngreen;
+}
+.barra-navegacion{
+    background-color: tomato;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    
+}
+.barra-inicio{
+    background-color: aqua;
+}
+.barra-inicio button{
+    margin:0 50px 0 50px;
+    padding: 10px;
+}
+.barra{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.barra-navegacion h1,
+.barra-navegacion a{
+    margin-right: 50px;
+    background-color: antiquewhite;
+}
+.mensaje{
+    background-color: blueviolet;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+span{
+    color: brown;
+    font-size:large;
+    align-items: center;
+    justify-content: center;
+    font-weight:bolder;
+}
+
+
+
+/*NOTICIAS BARRA PRINCIPAL*/
+.principal{
+    background-color: cadetblue;
+}
+.noticias {
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 10px; /* Espacio entre las noticias */
+}
+
+.noticia-principal {
+    grid-column: 1 / -1; /* Esto hace que abarque todo el ancho del grid */
+    background-color: #FF6347;
+    padding: 20px;
+}
+
+.noticia-secundarias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    gap: 5px; /* Espacio entre las noticias secundarias */
+}
+
+.noticia {
+    background-color: #FFD700;
+    padding: 5px;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .noticia-secundarias {
+        grid-template-columns: 1fr; /* Hace que cada noticia ocupe toda la fila en pantallas pequeñas */
+    }
+}
+
+/*Partidos destacadas*/
+.seccion-match{
+    background-color:cadetblue;
+}
+.partidos{
+    background-color: #FFD700;
+    gap: 20px;
+}
+.partido{
+    padding-bottom: 50px;
+    background-color: brown;
+}
+
+/*Estadisticas destacadas*/
+.seccion-stats{
+    background-color: cadetblue;
+}
+.estadisticas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.estadistica{
+    background-color: #FFD700;
+    padding: 5px;
+    text-align: center;
+}
+
+/*FOOTER*/
+.footer{
+    text-align: center;
+}
