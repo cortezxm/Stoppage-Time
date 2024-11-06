@@ -147,7 +147,25 @@ picture {
     }
 }
 
-/*NOTICIAS BARRA PRINCIPAL*/
+
+
+
+/*NOTICIAS BARRA PRINCIPAL*/  
+.noticia-principal picture {
+    margin-right: 20px; /* Añade espacio entre la imagen y el texto */
+ }
+  
+.noticia-principal a {
+    display: flex;
+    flex-direction: row;
+    color: inherit;
+    text-decoration: none;
+}
+.noticia a{
+    color: inherit;
+    text-decoration: none;
+}
+
 .principal{
     background-color: black;
 }
@@ -166,6 +184,7 @@ picture {
     background-color: black;
     padding: 20px;
     display: flex;
+    align-items: flex-start;
 }
 .contenido-noticia{
     width: 60%;
@@ -206,7 +225,20 @@ picture {
     .noticia-secundarias {
         grid-template-columns: 1fr; /* Hace que cada noticia ocupe toda la fila en pantallas pequeñas */
     }
+    .noticia-principal a{
+        flex-direction: column;
+    }
+    .noticia-principal .contenido-noticia {
+        width: 100%; /* El texto ocupa todo el ancho del contenedor */
+        padding: 0; /* Elimina el padding */
+      }
+    .noticia{
+        padding: 0;
+    }
 }
+
+
+
 
 /*Partidos destacadas*/
 .seccion-match{
