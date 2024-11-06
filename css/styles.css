@@ -281,15 +281,20 @@ picture {
     background-color: #333333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 0.5rem;
 }
+
 .divisor{
     display: flex;
     flex-direction: column;
+    gap: 0.25rem;
+    flex:1;
 }
 .equipo{
     display: flex;
-    align-items: center;
+    align-items:center;
     gap: 0.5rem;
+    padding-right: 100px;
 }
 .team-logo {
     width: 24px;
@@ -310,6 +315,7 @@ picture {
     align-items: flex-end;
     font-size: 0.9rem;
     color: #B0B0B0;
+    gap: 0.25rem;
 }
 
 .match-day {
