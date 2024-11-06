@@ -250,13 +250,82 @@ picture {
     padding-top: 25px;
 }
 .partidos{
-    background-color: #FFD700;
-    gap: 20px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+@media (min-width: 768px) {
+    .partidos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 1rem;
+    }
+}
+@media (min-width: 1024px) {
+    .partidos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 1rem;
+    }
 }
 .partido{
     padding-bottom: 50px;
     background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.divisor{
+    display: flex;
+    flex-direction: column;
+}
+.equipo{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.team-logo {
+    width: 24px;
+    height: 24px;
+}
+.team-name {
+    font-size: 0.9rem;
+    flex: 1;
+}
+.score {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+.match-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 0.9rem;
+    color: #B0B0B0;
+}
+
+.match-day {
+    font-weight: bold;
+}
+
+.match-status {
+    color: #B0B0B0;
+}
+
+.match-card-link{    
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Mantiene el color de texto heredado */
+    display: block; /* Hace que el enlace abarque todo el área del match-card */
+}
+
 
 /*Estadisticas destacadas*/
 .seccion-stats{
