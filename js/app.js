@@ -20,7 +20,6 @@ function navegacionResponsive(){
         
     }else{
         navegacion.classList.add('mostrar');
-        
     }
    //Hace lo mismo pero en una linea jajaja no sabia
    //navegacion.classList.toggle('mostrar');

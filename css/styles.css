@@ -4,7 +4,6 @@
   max-width: 1400px;
   margin: 0 auto;
 }
-
 body {
     width: 100%;
     height: 100%;
@@ -12,188 +11,108 @@ body {
     padding: 0;
     background-color: #1C1C1E;
 }
-
-
-/* h1 {
-    font-family: "roboto-bold", sans-serif;
-} */
-
 img,
 picture {
   width: 100%;
 }
 
+/*Navegacion*/
+/*A ver, basicamente el header pues tiene la navegacion de la pagina web*/
+/*Header ocupa todo el ancho, pero se ayuda de la clase contenedor para mantener el contenido centrado, ademas aqui se deja fijo siempre en la parte de arriba*/
+.header {
+  background-color:black;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+/*Aqui lo que hago es que solo en el caso del contenedor de header, aplique lo siguiente, esto es en modo pantalla de telefono, un flex en direccion column para que vaya de arriba a abajo, 
+center y center para centrar los elementos dentro de este div*/
+.header .contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+/*logo va dentro del div obvio, solo que no se pq tengo problema para centrarlo en pantalla de telefono*/
 .logo {
   font-family: "Northern-Army", sans-serif;
-}
-
-/*Navegacion*/
-.nav a {
+  font-weight: normal;
+  color: white;
   text-decoration: none;
-  color: inherit;
 }
+/*para el colo nadamas*/
+.logo span {
+  color: red;
+}
+/*La barra movil, si no te gusta quitala no hay problema*/
 .barra-movil img {
   width: 50px;
 }
-.header {
-    background-color: #1C1C1E;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.opciones-navegacion {
-  display: flex;
-    justify-content: space-between;
-}
-
-.opcion{
-    display: flex;
-    align-items: center;
-}
-
-.header .inicio {
-  background-position: center center;
-  background-size: cover;
-}
-.contenido-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.contenido-header h2 {
-  background-size: cover;
-  color: white;
-  font-weight: bold;
-  text-align: center;
-}
-.contenido-header h1 {
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-.contenido-header span {
-  color: red;
-  font-weight: bold;
-  font-size: large;
-}
-
-.barra {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navegacion div {
-    text-align: center;
-}
-
-.navegacion a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 15px; 
-}
-
-.navegacion a:hover {
-    border-radius: 5px;
-    color: red;
-}
-
-.nav {
-  text-align: center;
-  justify-content: space-between;
-}
-.navegacion {
+/*contiene las secciones, se oculta a menos que se toque el icono del menu desplegable*/
+.navegacion{
   visibility: hidden;
   height: 0;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  flex: 1;
+  margin-bottom: 15px;
 }
-.navegacion a {
-  color: white;
-  text-decoration: none;
-  font-family: "roboto-light", sans-serif;
-  font-size: 18px;
-  display: block;
-  text-align: center;
-  font-weight: bold;
-}
-/* .navegacion a:hover {
-  color: #ffd700;
-  background-color: #252525;
-} */
-
-.sesion {
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-}
-.sesion button {
-  color: white;
-  background-color: transparent;
-  border: none;
-  text-decoration: none;
-  font-size: 15px;
-  display: block;
-  font-weight: bold;
-}
-.sesion button:hover {
-  color: #ffd700;
-}
-
+/*Al estar en modo telefono, se hace visible el menu*/
 .mostrar {
   visibility: visible;
   height: auto;
   opacity: 1;
 }
-
-@media (min-width: 768px) {
-  /*.header .contenido-header{
-
-    }*/
-  .barra-movil {
-    display: none;
-
+/*Pues los estilos jajaj*/
+.navegacion a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
 }
-
-  .barra {
+/*Que se ilumine al estar encima de el*/
+.navegacion a:hover{
+  border-radius: 5px;
+  color: red;
+}
+/*los icnoso y sus estilos*/
+.sesion a {
+  color: white;
+  margin: 0 5px;
+  font-size: 18px;
+  text-decoration: none;
+}
+/*se iluminan tambien*/
+.sesion a:hover {
+  color: #ffd700;
+}
+/*Media queries responsivos*/
+@media (min-width: 768px) {
+  /*Al estar en pantallas mas grandes, la direccion del flex es row para que se muestren de izquierda a derecha los elemntos dentro del div*/
+  .header .contenedor{
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
   }
-  .navegacion {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
+  /*Al estar en pantallas mas grandes, sera siempre visible la barra de navegacion normal*/
+  .navegacion{
+    margin-bottom: 0px;
     visibility: visible;
+    opacity: 1;
     height: auto;
   }
-  .sesion {
-    flex-direction: row;
-    align-items: center;
-  }
-  .nav {
-    display: flex;
-  }
-  .navegacion a {
-    font-style: "roboto-light";
-    font-size: 19px;
-  }
-  .navegacion a:last-of-type {
+  /*AL estar en pantallas mas grandes, se oculta*/
+  .barra-movil{
+    visibility: hidden;
   }
 }
 
+
+
 /*NOTICIAS BARRA PRINCIPAL*/
+/*En esta seccion de noticias, pasa algo similiar, un div contiene otro div que es la seccion principal del home, este div tiene dentro un div llamado noticias, dentro de noticias existen las noticia principal y las secundairas,
+el div de noticia principal contiene un div del contenido y la imagen, con la intencion que en pantallas mas grandes, por medio de flex, se ponga el contenido a la derecha de la imagen */
+/*En noticias secundarias puse un grid para que aparezcan 3 noticias en diferente formato*/
+/*Basicamente con eso y los mediaqueries, salio esta seccion*/
 .noticia-principal picture {
   margin-right: 20px; /* Añade espacio entre la imagen y el texto */
 }
