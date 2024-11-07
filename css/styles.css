@@ -245,7 +245,7 @@ picture {
 
 .noticia-secundarias {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* Tres columnas iguales */
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
   gap: 20px; /* Espacio entre las noticias secundarias */
   width:97%;
   justify-content: space-between;
@@ -262,9 +262,9 @@ picture {
 }
 
 /* Responsivo para pantallas pequeñas */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .noticia-secundarias {
-    grid-template-columns:repeat(3,1fr); /* Hace que cada noticia ocupe toda la fila en pantallas pequeñas */
+    grid-template-columns: 1fr; /* Hace que cada noticia ocupe toda la fila en pantallas pequeñas */
   }
   .noticia-principal a {
     flex-direction: column;
