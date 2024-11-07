@@ -4,64 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-
-
-
-    <header class="header ">
-      <div class="contenedor contenido-header">
-        <div class="barra">
-          <div class="nav">
-            <h1><a href="/">STOPPAGE<span>.TIME</span></a></h1>
-            <div class="barra-movil">
-              <img src="img/barras.svg" alt="logo celular">
+    <div class="fondo">
+      <header class="header">
+        <div class="contenedor contenido-header">
+          <div class="barra">
+            <div class="nav">
+              <h1>
+                <a
+                  href="/"
+                  style="
+                    font-family: 'northern army Regular';
+                    font-weight: normal;
+                    font-size: 42px;
+                    margin-right: 100px;
+                  "
+                  >STOPPAGE<span>.TIME</span></a
+                >
+              </h1>
+              <div class="barra-movil">
+                <img src="img/barras.svg" alt="logo celular" />
+              </div>
+              <nav class="navegacion">
+                <div class="opciones-navegacion">
+                  <div class="opcion"><a href="partidos.html">Partidos</a></div>
+                  <div class="opcion">
+                    <a href="estadisticas.html">Estadisticas</a>
+                  </div>
+                  <div class="opcion"><a href="noticias.html">Noticias</a></div>
+                  <div class="opcion"><a href="contacto.html">Contacto</a></div>
+                </div>
+              </nav>
             </div>
-            <nav class="navegacion">
-                <a href="partidos.html">Partidos</a>
-                <a href="estadisticas.html">Estadisticas</a>
-                <a href="noticias.html">Noticias</a>
-                <a href="contacto.html">Contacto</a>
-            </nav>
+            <div class="sesion">
+              <button>Log In</button>
+              <button>Register</button>
+            </div>
           </div>
-          <div class="sesion">
-            <button>Log In</button>
-            <button>Register</button>
-          </div>
-            
-        </div><!--barra-->
-        <h2>ViVE LA EXPERIENCIA STOPPAGE.TIME</h2>
-      </div>
-    </header><!--HEADER-->
-
-
-
-
-
-    <main class="principal contenedor">
-      <h2>NOTICIAS DESTACADAS</h2>
-
-      <div class="noticias">
-        <div class="noticia-principal">
-          <a href="noticia.html">
-          <picture>
-            <img src="img/lamine.webp" alt="imagen">
-          </picture>
-          <div class="contenido-noticia">
-            <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-            <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
-          </div>
-          </a>
+          <!--barra-->
+          <!-- <h2>ViVE LA EXPERIENCIA STOPPAGE.TIME</h2> -->
         </div>
+      </header>
+      <!--HEADER-->
 
-        <div class="noticia-secundarias contenedor">
+      <main class="principal contenedor">
+        <h2 style="margin: 0">NOTICIAS DESTACADAS</h2>
+        <div class="noticias">
+          <div class="noticia-principal">
+            <a href="noticia.html">
+              <picture>
+                <img src="img/lamine.webp" alt="imagen" />
+              </picture>
+              <div class="contenido-noticia">
+                <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
+                <p>
+                  Contenido de la noticia principal... Lorem ipsum dolor sit
+                  amet consectetur, adipisicing elit. Dolorem placeat sit ad
+                  optio, doloremque perferendis praesentium assumenda, ut sequi
+                  culpa, provident quod earum quos et explicabo quo aperiam
+                  dicta? Aliquid?
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="noticia-secundarias contenedor">
             <div class="noticia">
               <a href="noticia.html">
                 <picture>
-                  <img src="img/lamine.webp" alt="imagen">
+                  <img src="img/lamine.webp" alt="imagen" />
                 </picture>
-                
+
                 <h4>Noticia 1</h4>
                 <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
               </a>
@@ -69,7 +84,7 @@
             <div class="noticia">
               <a href="noticia.html">
                 <picture>
-                  <img src="img/lamine.webp" alt="imagen">
+                  <img src="img/lamine.webp" alt="imagen" />
                 </picture>
                 <h4>Noticia 2</h4>
                 <p>Contenido de la noticia 2... lor</p>
@@ -78,181 +93,223 @@
             <div class="noticia">
               <a href="noticia.html">
                 <picture>
-                  <img src="img/lamine.webp" alt="imagen">
+                  <img src="img/lamine.webp" alt="imagen" />
                 </picture>
                 <h4>Noticia 3</h4>
                 <p>Contenido de la noticia 3...</p>
               </a>
             </div>
+          </div>
         </div>
-      </div>
-    </main><!--NOTICIAS DESTACADAS-->
+      </main>
+      <!--NOTICIAS DESTACADAS-->
 
-
-    <section class="seccion-match contenedor">
-      <h2>PARTIDOS DESTACADOS</h2>
-      <div class="partidos">
-        <a href="google.com" class="match-card-link">
-          <div class="partido">
-            <div class="divisor">
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo" class="team-logo">
-                <span class="team-name">Manchester United</span>
-                <span class="score">1</span>
+      <section class="seccion-match contenedor">
+        <h2>PARTIDOS DESTACADOS</h2>
+        <div class="partidos">
+          <a href="google.com" class="match-card-link">
+            <div class="partido">
+              <div class="divisor">
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                    alt="Manchester United Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Manchester United</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Chelsea</span>
+                  <span class="score">1</span>
+                </div>
               </div>
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="team-logo">
-                <span class="team-name">Chelsea</span>
-                <span class="score">1</span>
-            </div>
-            </div>
-            <div class="match-info">
-              <span class="match-day">Today</span>
-              <span class="match-status">Full time</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="google.com" class="match-card-link">
-          <div class="partido">
-            <div class="divisor">
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo" class="team-logo">
-                <span class="team-name">Manchester United</span>
-                <span class="score">1</span>
+              <div class="match-info">
+                <span class="match-day">Today</span>
+                <span class="match-status">Full time</span>
               </div>
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="team-logo">
-                <span class="team-name">Chelsea</span>
-                <span class="score">1</span>
             </div>
-            </div>
-            <div class="match-info">
-              <span class="match-day">Today</span>
-              <span class="match-status">Full time</span>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="google.com" class="match-card-link">
-          <div class="partido">
-            <div class="divisor">
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo" class="team-logo">
-                <span class="team-name">Manchester United</span>
-                <span class="score">1</span>
+          <a href="google.com" class="match-card-link">
+            <div class="partido">
+              <div class="divisor">
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                    alt="Manchester United Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Manchester United</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Chelsea</span>
+                  <span class="score">1</span>
+                </div>
               </div>
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="team-logo">
-                <span class="team-name">Chelsea</span>
-                <span class="score">1</span>
-            </div>
-            </div>
-            <div class="match-info">
-              <span class="match-day">Today</span>
-              <span class="match-status">Full time</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="google.com" class="match-card-link">
-          <div class="partido">
-            <div class="divisor">
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo" class="team-logo">
-                <span class="team-name">Manchester United</span>
-                <span class="score">1</span>
+              <div class="match-info">
+                <span class="match-day">Today</span>
+                <span class="match-status">Full time</span>
               </div>
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="team-logo">
-                <span class="team-name">Chelsea</span>
-                <span class="score">1</span>
             </div>
-            </div>
-            <div class="match-info">
-              <span class="match-day">Today</span>
-              <span class="match-status">Full time</span>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        <a href="google.com" class="match-card-link">
-          <div class="partido">
-            <div class="divisor">
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo" class="team-logo">
-                <span class="team-name">Manchester United</span>
-                <span class="score">1</span>
+          <a href="google.com" class="match-card-link">
+            <div class="partido">
+              <div class="divisor">
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                    alt="Manchester United Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Manchester United</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Chelsea</span>
+                  <span class="score">1</span>
+                </div>
               </div>
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="team-logo">
-                <span class="team-name">Chelsea</span>
-                <span class="score">1</span>
-            </div>
-            </div>
-            <div class="match-info">
-              <span class="match-day">Today</span>
-              <span class="match-status">Full time</span>
-            </div>
-          </div>
-        </a>
-
-        <a href="google.com" class="match-card-link">
-          <div class="partido">
-            <div class="divisor">
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg" alt="Manchester United Logo" class="team-logo">
-                <span class="team-name">Manchester United</span>
-                <span class="score">1</span>
+              <div class="match-info">
+                <span class="match-day">Today</span>
+                <span class="match-status">Full time</span>
               </div>
-              <div class="equipo">
-                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg" alt="Chelsea Logo" class="team-logo">
-                <span class="team-name">Chelsea</span>
-                <span class="score">1</span>
             </div>
+          </a>
+
+          <a href="google.com" class="match-card-link">
+            <div class="partido">
+              <div class="divisor">
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                    alt="Manchester United Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Manchester United</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Chelsea</span>
+                  <span class="score">1</span>
+                </div>
+              </div>
+              <div class="match-info">
+                <span class="match-day">Today</span>
+                <span class="match-status">Full time</span>
+              </div>
             </div>
-            <div class="match-info">
-              <span class="match-day">Today</span>
-              <span class="match-status">Full time</span>
+          </a>
+
+          <a href="google.com" class="match-card-link">
+            <div class="partido">
+              <div class="divisor">
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                    alt="Manchester United Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Manchester United</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Chelsea</span>
+                  <span class="score">1</span>
+                </div>
+              </div>
+              <div class="match-info">
+                <span class="match-day">Today</span>
+                <span class="match-status">Full time</span>
+              </div>
             </div>
-          </div>
-        </a>
+          </a>
 
-
-        
-      </div>
-    </section>
-
-
-    <section class="seccion-stats contenedor">
-      <h2>ESTADISTICAS DESTACADAS</h2>
-      <div class="estadisticas">
-        <div class="estadistica">
-          <h3>Estadistica 1</h3>
-          <p>datos .........</p>
+          <a href="google.com" class="match-card-link">
+            <div class="partido">
+              <div class="divisor">
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
+                    alt="Manchester United Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Manchester United</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea Logo"
+                    class="team-logo"
+                  />
+                  <span class="team-name">Chelsea</span>
+                  <span class="score">1</span>
+                </div>
+              </div>
+              <div class="match-info">
+                <span class="match-day">Today</span>
+                <span class="match-status">Full time</span>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="estadistica">
-          <h3>Estadistica 2</h3>
-          <p>datos .........</p>
+      </section>
+
+      <section class="seccion-stats contenedor">
+        <h2>ESTADISTICAS DESTACADAS</h2>
+        <div class="estadisticas">
+          <div class="estadistica">
+            <h3>Estadistica 1</h3>
+            <p>datos .........</p>
+          </div>
+          <div class="estadistica">
+            <h3>Estadistica 2</h3>
+            <p>datos .........</p>
+          </div>
+          <div class="estadistica">
+            <h3>Estadistica 3</h3>
+            <p>datos .........</p>
+          </div>
+          <div class="estadistica">
+            <h3>Estadistica 4</h3>
+            <p>datos .........</p>
+          </div>
         </div>
-        <div class="estadistica">
-          <h3>Estadistica 3</h3>
-          <p>datos .........</p>
-        </div>
-        <div class="estadistica">
-          <h3>Estadistica 4</h3>
-          <p>datos .........</p>
-        </div>
+      </section>
 
-      </div>
-    </section>
+      <footer class="footer">
+        <p>Todos los derechos reservados 2024.</p>
+      </footer>
 
-
-    <footer class="footer">
-      <p>Todos los derechos reservados 2024.</p>
-    </footer>
-
-    <script src="js/app.js"></script>
-
+      <script src="js/app.js"></script>
+    </div>
   </body>
 </html>
