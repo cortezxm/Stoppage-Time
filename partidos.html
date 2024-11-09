@@ -3,248 +3,677 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Partidos</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-
-
-
-    <header class="header">
-      <div class="contenedor">
-          <h1>
-              <a href="/" class="logo" style="font-family: 'northern army Regular';
-              font-weight: normal;
-              font-size: 42px;
-              margin-right: 100px;">
-                  STOPPAGE<span>.TIME</span>
-              </a>
-          </h1>
+    <div class="fondo">
+      <header class="header">
+        <div class="contenedor">
           <div class="barra-movil">
-            <img src="img/barras.svg" alt="logo celular">
+            <img src="img/barras.svg" alt="logo celular" />
           </div>
+          <h1>
+            <a
+              href="/"
+              class="logo"
+              style="
+                font-family: 'northern army Regular';
+                font-weight: normal;
+                font-size: 42px;
+                margin-right: 100px;
+              "
+            >
+              STOPPAGE<span>.TIME</span>
+            </a>
+          </h1>
           <nav class="navegacion">
-              <a href="partidos.html">Partidos</a>
-              <a href="estadisticas.html">Estadisticas</a>
-              <a href="noticias.html">Noticias</a>
-              <a href="contacto.html">Contacto</a>
+            <a href="partidos.html">Partidos</a>
+            <a href="estadisticas.html">Estadisticas</a>
+            <a href="noticias.html">Noticias</a>
+            <a href="contacto.html">Contacto</a>
           </nav>
           <div class="sesion">
-              <a href="login.html" title="Iniciar sesion"><i class="fas fa-sign-in-alt"></i></a>
-              <a href="register.html" title="Registrarse"><i class="fas fa-user-plus"></i></a>
+            <a href="login.html" title="Iniciar sesion"
+              ><i class="fas fa-sign-in-alt"></i
+            ></a>
+            <a href="register.html" title="Registrarse"
+              ><i class="fas fa-user-plus"></i
+            ></a>
           </div>
-      </div>
-  </header>
-    <!--HEADER-->
+        </div>
+      </header>
+      <!--HEADER-->
 
+      <main class="contenedor">
+        <h2>Partidos Importantes</h2>
 
-
-
-
-    <main class="principal contenedor">
-      <h2>PARTIDOS</h2>
-
-      <div class="noticias">
-        <div class="noticia-principal">
-          <a href="google.com">
-          <picture>
-            <img src="img/lamine.webp" alt="imagen">
-          </picture>
-          <div class="contenido-noticia">
-            <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-            <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
+        <!-- Liga MX -->
+        <section class="liga">
+          <div class="liga-header">
+            <div class="liga-info">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/800px-Flag_of_Mexico.svg.png"
+                alt="Mexico"
+                class="liga-icon"
+              />
+              <span class="liga-nombre">Liga MX</span>
+            </div>
           </div>
-          </a>
-        </div>
-
-        <div class="noticia-secundarias contenedor">
-            <div class="noticia">
-              <a href="google.com">
-                <picture>
-                  <img src="img/lamine.webp" alt="imagen">
-                </picture>
-                
-                <h4>Noticia 1</h4>
-                <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-              </a>
-            </div>
-            <div class="noticia">
-              <a href="googl.com">
-                <picture>
-                  <img src="img/lamine.webp" alt="imagen">
-                </picture>
-                <h4>Noticia 2</h4>
-                <p>Contenido de la noticia 2... lor</p>
-              </a>
-            </div>
-            <div class="noticia">
-              <a href="google.com">
-                <picture>
-                  <img src="img/lamine.webp" alt="imagen">
-                </picture>
-                <h4>Noticia 3</h4>
-                <p>Contenido de la noticia 3...</p>
-              </a>
-            </div>
-        </div>
-      </div>
-    </main><!--NOTICIAS DESTACADAS-->
-
-
-    <section class="principal contenedor">
-        <h2>NOTICIAS DESTACADAS</h2>
-
-        <div class="noticias">
-          <div class="noticia-principal">
-            <a href="google.com">
-            <picture>
-              <img src="img/lamine.webp" alt="imagen">
-            </picture>
-            <div class="contenido-noticia">
-              <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-              <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
-            </div>
+          <div class="lista-match">
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="América"
+                    class="escudo"
+                  />
+                  <span>América</span>
+                  <span class="score">2</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">8</span>
+                  <span>Chivas</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chivas"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">88'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Pumas"
+                    class="escudo"
+                  />
+                  <span>Pumas</span>
+                  <span class="score">2</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>Cruz Azul</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Cruz Azul"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Monterrey"
+                    class="escudo"
+                  />
+                  <span>Monterrey</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">0</span>
+                  <span>Tigres</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Tigres"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">75'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Toluca"
+                    class="escudo"
+                  />
+                  <span>Toluca</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>León</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="León"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Pachuca"
+                    class="escudo"
+                  />
+                  <span>Pachuca</span>
+                  <span class="score">4</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">0</span>
+                  <span>Atlas</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Atlas"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">60'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Querétaro"
+                    class="escudo"
+                  />
+                  <span>Querétaro</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>Santos</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Santos"
+                    class="escudo"
+                  />
+                </div>
+              </div>
             </a>
           </div>
-  
-          <div class="noticia-secundarias contenedor">
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  
-                  <h4>Noticia 1</h4>
-                  <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="googl.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 2</h4>
-                  <p>Contenido de la noticia 2... lor</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 3</h4>
-                  <p>Contenido de la noticia 3...</p>
-                </a>
-              </div>
-          </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="principal contenedor">
-        <h2>NOTICIAS DESTACADAS</h2>
-
-        <div class="noticias">
-          <div class="noticia-principal">
-            <a href="google.com">
-            <picture>
-              <img src="img/lamine.webp" alt="imagen">
-            </picture>
-            <div class="contenido-noticia">
-              <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-              <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
+        <!-- Premier League -->
+        <section class="liga">
+          <div class="liga-header">
+            <div class="liga-info">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/255px-Flag_of_England.svg.png"
+                alt="England"
+                class="liga-icon"
+              />
+              <span class="liga-nombre">Premier League</span>
             </div>
+          </div>
+          <div class="lista-match">
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Manchester United"
+                    class="escudo"
+                  />
+                  <span>Manchester United</span>
+                  <span class="score">2</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>Chelsea</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Chelsea"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">85'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Arsenal"
+                    class="escudo"
+                  />
+                  <span>Arsenal</span>
+                  <span class="score">3</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>Liverpool</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Liverpool"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">45'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Manchester City"
+                    class="escudo"
+                  />
+                  <span>Manchester City</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>Tottenham</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Tottenham"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Leicester City"
+                    class="escudo"
+                  />
+                  <span>Leicester City</span>
+                  <span class="score">0</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>West Ham</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="West Ham"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">75'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Everton"
+                    class="escudo"
+                  />
+                  <span>Everton</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">4</span>
+                  <span>Aston Villa</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Aston Villa"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Southampton"
+                    class="escudo"
+                  />
+                  <span>Southampton</span>
+                  <span class="score">2</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>Crystal Palace</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Crystal Palace"
+                    class="escudo"
+                  />
+                </div>
+              </div>
             </a>
           </div>
-  
-          <div class="noticia-secundarias contenedor">
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  
-                  <h4>Noticia 1</h4>
-                  <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="googl.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 2</h4>
-                  <p>Contenido de la noticia 2... lor</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 3</h4>
-                  <p>Contenido de la noticia 3...</p>
-                </a>
-              </div>
-          </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="principal contenedor">
-        <h2>NOTICIAS DESTACADAS</h2>
-
-        <div class="noticias">
-          <div class="noticia-principal">
-            <a href="google.com">
-            <picture>
-              <img src="img/lamine.webp" alt="imagen">
-            </picture>
-            <div class="contenido-noticia">
-              <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-              <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
+        <!-- La Liga -->
+        <section class="liga">
+          <div class="liga-header">
+            <div class="liga-info">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Bandera_de_Espa%C3%B1a.svg/255px-Bandera_de_Espa%C3%B1a.svg.png"
+                alt="Spain"
+                class="liga-icon"
+              />
+              <span class="liga-nombre">La Liga</span>
             </div>
+          </div>
+          <div class="lista-match">
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Barcelona"
+                    class="escudo"
+                  />
+                  <span>Barcelona</span>
+                  <span class="score">0</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">5</span>
+                  <span>Real Madrid</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Real Madrid"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">88'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Atlético de Madrid"
+                    class="escudo"
+                  />
+                  <span>Atlético de Madrid</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">0</span>
+                  <span>Sevilla</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Sevilla"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Valencia"
+                    class="escudo"
+                  />
+                  <span>Valencia</span>
+                  <span class="score">0</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">3</span>
+                  <span>Real Betis</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Real Betis"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Villarreal"
+                    class="escudo"
+                  />
+                  <span>Villarreal</span>
+                  <span class="score">2</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">0</span>
+                  <span>Celta Vigo</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Celta Vigo"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">60'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Espanyol"
+                    class="escudo"
+                  />
+                  <span>Espanyol</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>Getafe</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Getafe"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Athletic Bilbao"
+                    class="escudo"
+                  />
+                  <span>Athletic Bilbao</span>
+                  <span class="score">0</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>Mallorca</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Mallorca"
+                    class="escudo"
+                  />
+                </div>
+              </div>
             </a>
           </div>
-  
-          <div class="noticia-secundarias contenedor">
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  
-                  <h4>Noticia 1</h4>
-                  <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="googl.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 2</h4>
-                  <p>Contenido de la noticia 2... lor</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 3</h4>
-                  <p>Contenido de la noticia 3...</p>
-                </a>
-              </div>
+        </section>
+
+        <!-- Serie A -->
+        <section class="liga">
+          <div class="liga-header">
+            <div class="liga-info">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png"
+                alt="Italy"
+                class="liga-icon"
+              />
+              <span class="liga-nombre">Serie A</span>
+            </div>
           </div>
-        </div>
-    </section>
+          <div class="lista-match">
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Juventus"
+                    class="escudo"
+                  />
+                  <span>Juventus</span>
+                  <span class="score">2</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>AC Milan</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="AC Milan"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Inter"
+                    class="escudo"
+                  />
+                  <span>Inter</span>
+                  <span class="score">3</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">3</span>
+                  <span>Roma</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Roma"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">80'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Napoli"
+                    class="escudo"
+                  />
+                  <span>Napoli</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">0</span>
+                  <span>Fiorentina</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Fiorentina"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Lazio"
+                    class="escudo"
+                  />
+                  <span>Lazio</span>
+                  <span class="score">4</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>Sassuolo</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Sassuolo"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">FT</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Torino"
+                    class="escudo"
+                  />
+                  <span>Torino</span>
+                  <span class="score">0</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">2</span>
+                  <span>Bologna</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Bologna"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+            <a href="match.html" class="match-link">
+              <div class="match">
+                <span class="hora">75'</span>
+                <div class="equipo">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Atalanta"
+                    class="escudo"
+                  />
+                  <span>Atalanta</span>
+                  <span class="score">1</span>
+                </div>
+                <div class="equipo">
+                  <span class="score">1</span>
+                  <span>Udinese</span>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/en/c/cc/Chelsea_FC.svg"
+                    alt="Udinese"
+                    class="escudo"
+                  />
+                </div>
+              </div>
+            </a>
+          </div>
+        </section>
+      </main>
 
+      <footer class="footer">
+        <p>Todos los derechos reservados 2024.</p>
+      </footer>
 
-    <footer class="footer">
-      <p>Todos los derechos reservados 2024.</p>
-    </footer>
-
-    <script src="js/app.js"></script>
-
+      <script src="js/app.js"></script>
+    </div>
   </body>
 </html>

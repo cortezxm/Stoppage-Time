@@ -5,11 +5,11 @@
   margin: 0 auto;
 }
 body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #1C1C1E;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1e;
 }
 img,
 picture {
@@ -20,7 +20,7 @@ picture {
 /*A ver, basicamente el header pues tiene la navegacion de la pagina web*/
 /*Header ocupa todo el ancho, pero se ayuda de la clase contenedor para mantener el contenido centrado, ademas aqui se deja fijo siempre en la parte de arriba*/
 .header {
-  background-color:black;
+  background-color: #121212;
   padding: 10px 20px;
   color: white;
   position: sticky;
@@ -29,11 +29,12 @@ picture {
 }
 /*Aqui lo que hago es que solo en el caso del contenedor de header, aplique lo siguiente, esto es en modo pantalla de telefono, un flex en direccion column para que vaya de arriba a abajo, 
 center y center para centrar los elementos dentro de este div*/
-.header .contenedor{
+
+/* Modifico justify-content para que el espacio entre los elementos sea el mismo */
+.header .contenedor {
   display: flex;
-  flex-direction: column;
-  align-items:center;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 /*logo va dentro del div obvio, solo que no se pq tengo problema para centrarlo en pantalla de telefono*/
 .logo {
@@ -41,6 +42,8 @@ center y center para centrar los elementos dentro de este div*/
   font-weight: normal;
   color: white;
   text-decoration: none;
+  flex-grow: 1;
+  text-align: center;
 }
 /*para el colo nadamas*/
 .logo span {
@@ -48,10 +51,12 @@ center y center para centrar los elementos dentro de este div*/
 }
 /*La barra movil, si no te gusta quitala no hay problema*/
 .barra-movil img {
-  width: 50px;
+  display: block;
+  width: 20px;
+  margin-right: 90px; /* Añade espacio entre el icono y el texto */
 }
 /*contiene las secciones, se oculta a menos que se toque el icono del menu desplegable*/
-.navegacion{
+.navegacion {
   visibility: hidden;
   height: 0;
   opacity: 0;
@@ -72,7 +77,7 @@ center y center para centrar los elementos dentro de este div*/
   text-decoration: none;
 }
 /*Que se ilumine al estar encima de el*/
-.navegacion a:hover{
+.navegacion a:hover {
   border-radius: 5px;
   color: red;
 }
@@ -90,23 +95,21 @@ center y center para centrar los elementos dentro de este div*/
 /*Media queries responsivos*/
 @media (min-width: 768px) {
   /*Al estar en pantallas mas grandes, la direccion del flex es row para que se muestren de izquierda a derecha los elemntos dentro del div*/
-  .header .contenedor{
+  .header .contenedor {
     flex-direction: row;
   }
   /*Al estar en pantallas mas grandes, sera siempre visible la barra de navegacion normal*/
-  .navegacion{
+  .navegacion {
     margin-bottom: 0px;
     visibility: visible;
     opacity: 1;
     height: auto;
   }
   /*AL estar en pantallas mas grandes, se oculta*/
-  .barra-movil{
-    visibility: hidden;
+  .barra-movil {
+    display: none;
   }
 }
-
-
 
 /*NOTICIAS BARRA PRINCIPAL*/
 /*En esta seccion de noticias, pasa algo similiar, un div contiene otro div que es la seccion principal del home, este div tiene dentro un div llamado noticias, dentro de noticias existen las noticia principal y las secundairas,
@@ -129,7 +132,7 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
 }
 
 .principal {
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
 }
 .principal h2 {
   color: white;
@@ -142,7 +145,7 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
 }
 
 .noticia-principal {
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
   padding: 20px;
   display: flex;
   align-items: flex-start;
@@ -155,8 +158,8 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
   flex-direction: column; /* Pone el h2 sobre el párrafo */
   justify-content: center; /* Centra verticalmente el contenido */
   /*align-items: center; /* Centra horizontalmente el contenido */
-  border-style: solid;
-  border-color: #252525;
+  /* border-style: solid;
+  border-color: #252525; */
 }
 .contenido-noticia h3 {
   font-weight: bold;
@@ -166,12 +169,12 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
   gap: 20px; /* Espacio entre las noticias secundarias */
-  width:97%;
+  width: 97%;
   justify-content: space-between;
 }
 
 .noticia {
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
   width: 100%;
   color: white;
   display: flex;
@@ -197,17 +200,21 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
   }
 }
 
-
 /*Partidos destacadas*/
 .seccion-match {
-  background-color: #3A3A3C;
+  background-color: #3a3a3c;
   color: white;
 }
 .seccion-match h2 {
   margin-left: 25px;
   padding-top: 25px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 .partidos {
+  margin-left: 25px;
+  margin-right: 25px;
   justify-content: center;
   display: flex;
   flex-direction: column;
@@ -240,6 +247,7 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .divisor {
@@ -292,17 +300,31 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
 
 /*Estadisticas destacadas*/
 .seccion-stats {
-  background-color: cadetblue;
+  background-color: #3a3a3c;
+}
+
+.seccion-stats h2 {
+  margin-left: 25px;
+  padding-top: 25px;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
 }
 .estadisticas {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 .estadistica {
-  background-color: #ffd700;
+  background-color: #333333;
+  border-radius: 8px;
   padding: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin-bottom: 1rem;
 }
 @media (max-width: 768px) {
   .estadisticas {
@@ -310,10 +332,399 @@ el div de noticia principal contiene un div del contenido y la imagen, con la in
   }
 }
 
+/* Aqui voy a poner estilos relacionados con la pagina de los partidos */
+
+/* Estilos generales */
+main.contenedor {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #1c1c1e; /* Fondo oscuro */
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.liga {
+  margin-bottom: 20px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.liga-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.liga-info {
+  display: flex;
+  align-items: center;
+}
+
+.liga-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.liga-nombre {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.lista-match {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas por defecto */
+  gap: 10px; /* Espacio entre partidos */
+}
+
+.match {
+  display: flex;
+  align-items: center;
+  background-color: #3a3a3c;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hora {
+  flex: 0 0 50px;
+  text-align: center;
+  font-size: 14px;
+  color: red;
+}
+
+.escudo {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.equipo {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.equipo span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.estado {
+  font-size: 12px;
+  color: #ff4500; /* Rojo para indicar el minuto en curso */
+}
+
+/* Responsivo para pantallas medianas */
+@media (max-width: 1024px) {
+  .liga-nombre {
+    font-size: 15px;
+  }
+  .ratings {
+    font-size: 13px;
+  }
+  .hora {
+    font-size: 13px;
+  }
+  .equipo {
+    font-size: 15px;
+  }
+  .score {
+    font-size: 16px;
+  }
+}
+
+/* Una columna en pantallas pequeñas */
+@media (max-width: 768px) {
+  .lista-match {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+
+  .liga-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .liga-nombre {
+    font-size: 14px;
+  }
+  .ratings {
+    font-size: 12px;
+  }
+  .hora {
+    font-size: 12px;
+  }
+  .equipo {
+    font-size: 14px;
+  }
+  .score {
+    font-size: 14px;
+  }
+  .estado {
+    font-size: 10px;
+  }
+}
+
+/* Ajustes para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 5px;
+  }
+
+  .liga-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .liga-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .liga-nombre {
+    font-size: 13px;
+  }
+
+  .hora {
+    font-size: 11px;
+  }
+
+  .equipo {
+    font-size: 13px;
+  }
+
+  .score {
+    font-size: 12px;
+  }
+
+  .estado {
+    font-size: 9px;
+  }
+}
+
+.match-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.match-link:hover .match {
+  background-color: #4a4a4c; /* Un color ligeramente diferente al hacer hover */
+}
+
+/* Aqui terminan los estilos de los partidos */
+
+/* Aqui voy a poner estilos relacionados con la pagina del partido en detalle match.html */
+
+.caja {
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.resultado h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.fecha,
+.info-adicional {
+  text-align: center;
+  color: #b0b0b0;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.marcador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.equipo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.escudo {
+  width: 24px;
+  height: 24px;
+}
+
+.anotadores h2,
+.alineaciones h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.anotadores ul,
+.equipo-alineacion ul {
+  list-style: none;
+  padding: 0;
+  color: #b0b0b0;
+}
+
+.anotadores li,
+.equipo-alineacion li {
+  padding: 5px 0;
+  border-bottom: 1px solid #3a3a3c;
+}
+
+.equipo-alineacion {
+  margin-top: 10px;
+  color: #b0b0b0;
+}
+
+.equipo-alineacion h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.partido-info p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.marcador-detalle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #3a3a3c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.equipo {
+  display: flex;
+  align-items: right;
+  gap: 10px;
+}
+
+.equipo-info h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.equipo-info p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.escudo {
+  width: 50px;
+  height: 50px;
+}
+
+.marcador-central {
+  text-align: center;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+
+.separador {
+  font-size: 36px;
+  margin: 0 10px;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+
+.minuto {
+  font-size: 16px;
+  color: red;
+  margin-top: 5px;
+}
+
+.anotadores {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #3a3a3c;
+  border-radius: 8px;
+  margin-top: -15px; /* Para que se una visualmente con el marcador */
+}
+
+.anotadores-equipo {
+  text-align: center;
+  color: red;
+  flex: 1;
+}
+
+.anotadores-equipo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.anotadores-equipo li {
+  padding: 2px 0;
+}
+
+.alineaciones {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3a3a3c;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.alineacion-equipo {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.alineacion-equipo h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.alineacion-equipo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+
+.alineacion-equipo li {
+  padding: 4px 0;
+  text-align: center;
+}
+
+/* Aqui se acaban los estilos de la pagina del partido en detalle match.html */
 /*FOOTER*/
 .footer {
   text-align: center;
-  background-color: #1C1C1E;
+  background-color: #1c1c1e;
   color: white;
   font-size: 20px;
   max-width: 100%;
