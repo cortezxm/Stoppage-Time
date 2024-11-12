@@ -3,248 +3,1192 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Estadisticas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-
-
-
     <header class="header">
       <div class="contenedor">
-          <h1>
-              <a href="/" class="logo" style="font-family: 'northern army Regular';
+        <div class="barra-movil">
+          <img src="img/barras.svg" alt="logo celular" />
+        </div>
+        <h1>
+          <a
+            href="/"
+            class="logo"
+            style="
+              font-family: 'northern army Regular';
               font-weight: normal;
               font-size: 42px;
-              margin-right: 100px;">
-                  STOPPAGE<span>.TIME</span>
-              </a>
-          </h1>
-          <div class="barra-movil">
-            <img src="img/barras.svg" alt="logo celular">
-          </div>
-          <nav class="navegacion">
-              <a href="partidos.html">Partidos</a>
-              <a href="estadisticas.html">Estadisticas</a>
-              <a href="noticias.html">Noticias</a>
-              <a href="contacto.html">Contacto</a>
-          </nav>
-          <div class="sesion">
-              <a href="login.html" title="Iniciar sesion"><i class="fas fa-sign-in-alt"></i></a>
-              <a href="register.html" title="Registrarse"><i class="fas fa-user-plus"></i></a>
-          </div>
+              margin-right: 100px;
+            "
+          >
+            STOPPAGE<span>.TIME</span>
+          </a>
+        </h1>
+
+        <nav class="navegacion">
+          <a href="partidos.html">Partidos</a>
+          <a href="estadisticas.html">Estadisticas</a>
+          <a href="noticias.html">Noticias</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="sesion">
+          <a href="login.html" title="Iniciar sesion"
+            ><i class="fas fa-sign-in-alt"></i
+          ></a>
+          <a href="register.html" title="Registrarse"
+            ><i class="fas fa-user-plus"></i
+          ></a>
+        </div>
       </div>
-  </header>
+    </header>
     <!--HEADER-->
 
-
-
-
-
-    <main class="principal contenedor">
-      <h2>ESTADISTICAS</h2>
-
-      <div class="noticias">
-        <div class="noticia-principal">
-          <a href="google.com">
-          <picture>
-            <img src="img/lamine.webp" alt="imagen">
-          </picture>
-          <div class="contenido-noticia">
-            <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-            <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
+    <main class="contenedor">
+      <section class="estadisticas">
+        <!-- Contenedor de la Tabla de Posiciones -->
+        <div class="estadisticas-liga">
+          <div class="posiciones-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/800px-Flag_of_Mexico.svg.png"
+                  alt="Mexico"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Liga MX Apertura 2024</span>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipo</th>
+                  <th>PJ</th>
+                  <th>G</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Chivas</td>
+                  <td>15</td>
+                  <td>15</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>45</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>América</td>
+                  <td>15</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Monterrey</td>
+                  <td>15</td>
+                  <td>9</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Tigres</td>
+                  <td>15</td>
+                  <td>8</td>
+                  <td>5</td>
+                  <td>2</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Pumas</td>
+                  <td>15</td>
+                  <td>8</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>León</td>
+                  <td>15</td>
+                  <td>7</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>26</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Cruz Azul</td>
+                  <td>15</td>
+                  <td>7</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Puebla</td>
+                  <td>15</td>
+                  <td>6</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Santos Laguna</td>
+                  <td>15</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>6</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Atlas</td>
+                  <td>15</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Querétaro</td>
+                  <td>15</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Atlético San Luis</td>
+                  <td>15</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>7</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Juárez</td>
+                  <td>15</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>7</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Tijuana</td>
+                  <td>15</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>8</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Mazatlán</td>
+                  <td>15</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>9</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Necaxa</td>
+                  <td>15</td>
+                  <td>2</td>
+                  <td>5</td>
+                  <td>8</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Pachuca</td>
+                  <td>15</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>FC Juárez</td>
+                  <td>15</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>11</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          </a>
+
+          <!-- Tabla de Goleo -->
+          <div class="goleo-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1036/PNG/256/Soccer_Ball_icon-icons.com_76265.png"
+                  alt="Mexico"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Tabla goleo </span>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Jugador</th>
+                  <th>Equipo</th>
+                  <th>Goles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Armando González</td>
+                  <td>Chivas</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>Paulinho</td>
+                  <td>Toluca</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>Ángel Sepúlveda</td>
+                  <td>Cruz Azul</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Henry Martín</td>
+                  <td>América</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Sergio Canales</td>
+                  <td>Monterrey</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Carlos Rotondi</td>
+                  <td>Cruz Azul</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>André-Pierre Gignac</td>
+                  <td>Tigres</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Óscar Estupiñán</td>
+                  <td>FC Juárez</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Germán Berterame</td>
+                  <td>Monterrey</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Sébastien Salles-Lamonge</td>
+                  <td>Atlético San Luis</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </section>
 
-        <div class="noticia-secundarias contenedor">
-            <div class="noticia">
-              <a href="google.com">
-                <picture>
-                  <img src="img/lamine.webp" alt="imagen">
-                </picture>
-                
-                <h4>Noticia 1</h4>
-                <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-              </a>
+      <section class="estadisticas">
+        <!-- Contenedor de la Tabla de Posiciones -->
+        <div class="estadisticas-liga">
+          <div class="posiciones-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+                  alt="Reino Unido"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Premier League 2024-2025</span>
+              </div>
             </div>
-            <div class="noticia">
-              <a href="googl.com">
-                <picture>
-                  <img src="img/lamine.webp" alt="imagen">
-                </picture>
-                <h4>Noticia 2</h4>
-                <p>Contenido de la noticia 2... lor</p>
-              </a>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipo</th>
+                  <th>PJ</th>
+                  <th>G</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Liverpool</td>
+                  <td>10</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Manchester City</td>
+                  <td>10</td>
+                  <td>7</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Nottingham Forest</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Chelsea</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Arsenal</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Aston Villa</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Tottenham Hotspur</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Brighton & Hove Albion</td>
+                  <td>10</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Bournemouth</td>
+                  <td>10</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Newcastle United</td>
+                  <td>10</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Brentford</td>
+                  <td>9</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Fulham</td>
+                  <td>9</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Manchester United</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>West Ham United</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>5</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Leicester City</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Everton</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Crystal Palace</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Ipswich Town</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Southampton</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>8</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Wolverhampton Wanderers</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>9</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Tabla de Goleo -->
+          <div class="goleo-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1036/PNG/256/Soccer_Ball_icon-icons.com_76265.png"
+                  alt="Goleo"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Tabla de Goleo</span>
+              </div>
             </div>
-            <div class="noticia">
-              <a href="google.com">
-                <picture>
-                  <img src="img/lamine.webp" alt="imagen">
-                </picture>
-                <h4>Noticia 3</h4>
-                <p>Contenido de la noticia 3...</p>
-              </a>
-            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Jugador</th>
+                  <th>Equipo</th>
+                  <th>Goles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Erling Haaland</td>
+                  <td>Manchester City</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>Mohamed Salah</td>
+                  <td>Liverpool</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Harry Kane</td>
+                  <td>Tottenham Hotspur</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Darwin Núñez</td>
+                  <td>Liverpool</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Gabriel Jesus</td>
+                  <td>Arsenal</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Marcus Rashford</td>
+                  <td>Manchester United</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Raheem Sterling</td>
+                  <td>Chelsea</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>James Maddison</td>
+                  <td>Leicester City</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Ivan Toney</td>
+                  <td>Brentford</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Phil Foden</td>
+                  <td>Manchester City</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
-    </main><!--NOTICIAS DESTACADAS-->
+      </section>
 
-
-    <section class="principal contenedor">
-        <h2>NOTICIAS DESTACADAS</h2>
-
-        <div class="noticias">
-          <div class="noticia-principal">
-            <a href="google.com">
-            <picture>
-              <img src="img/lamine.webp" alt="imagen">
-            </picture>
-            <div class="contenido-noticia">
-              <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-              <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
+      <section class="estadisticas">
+        <!-- Contenedor de la Tabla de Posiciones -->
+        <div class="estadisticas-liga">
+          <div class="posiciones-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/800px-Flag_of_Spain.svg.png"
+                  alt="España"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">La Liga 2024-2025</span>
+              </div>
             </div>
-            </a>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipo</th>
+                  <th>PJ</th>
+                  <th>G</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Real Madrid</td>
+                  <td>12</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>0</td>
+                  <td>32</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Barcelona</td>
+                  <td>12</td>
+                  <td>9</td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>29</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Atlético de Madrid</td>
+                  <td>12</td>
+                  <td>8</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Sevilla</td>
+                  <td>12</td>
+                  <td>7</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>23</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Real Sociedad</td>
+                  <td>12</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Villarreal</td>
+                  <td>12</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Real Betis</td>
+                  <td>12</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Athletic Club</td>
+                  <td>12</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>3</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Valencia</td>
+                  <td>12</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Osasuna</td>
+                  <td>12</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Espanyol</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Getafe</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Granada</td>
+                  <td>12</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>6</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Alavés</td>
+                  <td>12</td>
+                  <td>2</td>
+                  <td>5</td>
+                  <td>5</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Leganés</td>
+                  <td>12</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Rayo Vallecano</td>
+                  <td>12</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>7</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Las Palmas</td>
+                  <td>12</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>8</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Elche</td>
+                  <td>12</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>7</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Almería</td>
+                  <td>12</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>8</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Cádiz</td>
+                  <td>12</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>9</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-  
-          <div class="noticia-secundarias contenedor">
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  
-                  <h4>Noticia 1</h4>
-                  <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-                </a>
+
+          <!-- Tabla de Goleo -->
+          <div class="goleo-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1036/PNG/256/Soccer_Ball_icon-icons.com_76265.png"
+                  alt="Goleo"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Tabla de Goleo</span>
               </div>
-              <div class="noticia">
-                <a href="googl.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 2</h4>
-                  <p>Contenido de la noticia 2... lor</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 3</h4>
-                  <p>Contenido de la noticia 3...</p>
-                </a>
-              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Jugador</th>
+                  <th>Equipo</th>
+                  <th>Goles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vinícius Júnior</td>
+                  <td>Real Madrid</td>
+                  <td>36</td>
+                </tr>
+                <tr>
+                  <td>Kylian Mbappé</td>
+                  <td>Real Madri</td>
+                  <td>30</td>
+                </tr>
+                <tr>
+                  <td>Antoine Griezmann</td>
+                  <td>Atlético de Madrid</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Youssef En-Nesyri</td>
+                  <td>Sevilla</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Alexander Isak</td>
+                  <td>Real Sociedad</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Gerard Moreno</td>
+                  <td>Villarreal</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Borja Iglesias</td>
+                  <td>Real Betis</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Iñaki Williams</td>
+                  <td>Athletic Club</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Gonçalo Guedes</td>
+                  <td>Valencia</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>Chimy Ávila</td>
+                  <td>Osasuna</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-    </section>
+      </section>
 
-    <section class="principal contenedor">
-        <h2>NOTICIAS DESTACADAS</h2>
-
-        <div class="noticias">
-          <div class="noticia-principal">
-            <a href="google.com">
-            <picture>
-              <img src="img/lamine.webp" alt="imagen">
-            </picture>
-            <div class="contenido-noticia">
-              <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-              <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
+      <section class="estadisticas">
+        <!-- Contenedor de la Tabla de Posiciones -->
+        <div class="estadisticas-liga">
+          <div class="posiciones-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+                  alt="Italia"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Serie A 2024-2025</span>
+              </div>
             </div>
-            </a>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Equipo</th>
+                  <th>PJ</th>
+                  <th>G</th>
+                  <th>E</th>
+                  <th>P</th>
+                  <th>PTS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Napoli</td>
+                  <td>10</td>
+                  <td>8</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>25</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Inter de Milán</td>
+                  <td>10</td>
+                  <td>6</td>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Atalanta</td>
+                  <td>10</td>
+                  <td>6</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Fiorentina</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Lazio</td>
+                  <td>10</td>
+                  <td>6</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>19</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Juventus</td>
+                  <td>10</td>
+                  <td>4</td>
+                  <td>6</td>
+                  <td>0</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Udinese</td>
+                  <td>10</td>
+                  <td>5</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>16</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>AC Milan</td>
+                  <td>10</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>15</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Roma</td>
+                  <td>10</td>
+                  <td>4</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Torino</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>3</td>
+                  <td>13</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Sassuolo</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Bologna</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>Empoli</td>
+                  <td>10</td>
+                  <td>3</td>
+                  <td>2</td>
+                  <td>5</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>Monza</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>Genoa</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>5</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>Salernitana</td>
+                  <td>10</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>6</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>Verona</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>Lecce</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td>3</td>
+                  <td>6</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>Cagliari</td>
+                  <td>10</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>7</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>Frosinone</td>
+                  <td>10</td>
+                  <td>0</td>
+                  <td>2</td>
+                  <td>8</td>
+                  <td>2</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-  
-          <div class="noticia-secundarias contenedor">
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  
-                  <h4>Noticia 1</h4>
-                  <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-                </a>
+
+          <!-- Tabla de Goleo -->
+          <div class="goleo-container">
+            <div class="liga-header">
+              <div class="liga-info">
+                <img
+                  src="https://cdn.icon-icons.com/icons2/1036/PNG/256/Soccer_Ball_icon-icons.com_76265.png"
+                  alt="Goleo"
+                  class="liga-icon"
+                />
+                <span class="liga-nombre">Tabla de Goleo</span>
               </div>
-              <div class="noticia">
-                <a href="googl.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 2</h4>
-                  <p>Contenido de la noticia 2... lor</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 3</h4>
-                  <p>Contenido de la noticia 3...</p>
-                </a>
-              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Jugador</th>
+                  <th>Equipo</th>
+                  <th>Goles</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Victor Osimhen</td>
+                  <td>Napoli</td>
+                  <td>12</td>
+                </tr>
+                <tr>
+                  <td>Lautaro Martínez</td>
+                  <td>Inter de Milán</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Olivier Giroud</td>
+                  <td>AC Milan</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Paulo Dybala</td>
+                  <td>Roma</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>Dusan Vlahovic</td>
+                  <td>Juventus</td>
+                  <td>8</td>
+                </tr>
+                <tr>
+                  <td>Ciro Immobile</td>
+                  <td>Lazio</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Gianluca Scamacca</td>
+                  <td>Atalanta</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Giacomo Raspadori</td>
+                  <td>Napoli</td>
+                  <td>6</td>
+                </tr>
+                <tr>
+                  <td>Arkadiusz Milik</td>
+                  <td>Fiorentina</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Davide Frattesi</td>
+                  <td>Sassuolo</td>
+                  <td>5</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-    </section>
-
-    <section class="principal contenedor">
-        <h2>NOTICIAS DESTACADAS</h2>
-
-        <div class="noticias">
-          <div class="noticia-principal">
-            <a href="google.com">
-            <picture>
-              <img src="img/lamine.webp" alt="imagen">
-            </picture>
-            <div class="contenido-noticia">
-              <h3>Barcelona gana 5-0 al Young Boys de Suiza</h3>
-              <p>Contenido de la noticia principal... Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem placeat sit ad optio, doloremque perferendis praesentium assumenda, ut sequi culpa, provident quod earum quos et explicabo quo aperiam dicta? Aliquid?</p>
-            </div>
-            </a>
-          </div>
-  
-          <div class="noticia-secundarias contenedor">
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  
-                  <h4>Noticia 1</h4>
-                  <p>Contenido de la noticia 1... Lorem ipsum, dolor si</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="googl.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 2</h4>
-                  <p>Contenido de la noticia 2... lor</p>
-                </a>
-              </div>
-              <div class="noticia">
-                <a href="google.com">
-                  <picture>
-                    <img src="img/lamine.webp" alt="imagen">
-                  </picture>
-                  <h4>Noticia 3</h4>
-                  <p>Contenido de la noticia 3...</p>
-                </a>
-              </div>
-          </div>
-        </div>
-    </section>
-
+      </section>
+    </main>
 
     <footer class="footer">
       <p>Todos los derechos reservados 2024.</p>
     </footer>
 
     <script src="js/app.js"></script>
-
   </body>
 </html>

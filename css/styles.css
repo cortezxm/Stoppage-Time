@@ -351,7 +351,6 @@ main.contenedor {
 }
 
 .liga-header {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
@@ -721,6 +720,54 @@ main.contenedor {
 }
 
 /* Aqui se acaban los estilos de la pagina del partido en detalle match.html */
+
+/* Aqui van los estilos de la pagina de estadisticas */
+
+.estadisticas-liga {
+  display: flex;
+  border-radius: 8px;
+}
+
+.estadisticas {
+  display: flex;
+  gap: 20px;
+}
+
+.posiciones-container,
+.goleo-container {
+  background-color: #333;
+  padding: 20px;
+}
+
+/* Ajuste del ancho de cada contenedor */
+.posiciones-container {
+  flex: 2; /* 66.66% del ancho */
+}
+
+.goleo-container {
+  flex: 1; /* 33.33% del ancho */
+}
+
+/* Estilos generales para las tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #555;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #444;
+}
+/* Aquí terminan los estilos de la página de estadísticas */
 /*FOOTER*/
 .footer {
   text-align: center;
