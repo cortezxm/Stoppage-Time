@@ -13,7 +13,7 @@ function eventListeners(){
 
 function navegacionResponsive(){
     console.log('HOLAAAAAAAAA');
-    const navegacion=document.querySelector('.navegacion');
+    const navegacion=document.querySelector('.menu-movil .navegacion');
     //Basicamente al hacer click si contiene mostrar lo elimina, si no lo contiene, lo agrega 
     if(navegacion.classList.contains('mostrar')){
         navegacion.classList.remove('mostrar');

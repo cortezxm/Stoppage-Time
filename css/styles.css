@@ -3,6 +3,7 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  margin-bottom: 15px;
 }
 body {
   width: 100%;
@@ -17,8 +18,6 @@ picture {
 }
 
 /*Navegacion*/
-/*A ver, basicamente el header pues tiene la navegacion de la pagina web*/
-/*Header ocupa todo el ancho, pero se ayuda de la clase contenedor para mantener el contenido centrado, ademas aqui se deja fijo siempre en la parte de arriba*/
 .header {
   background-color: #121212;
   padding: 10px 20px;
@@ -44,35 +43,35 @@ center y center para centrar los elementos dentro de este div*/
   text-decoration: none;
   flex-grow: 1;
   text-align: center;
+  margin:auto
 }
 /*para el colo nadamas*/
 .logo span {
+  font-size: 50%;
   color: red;
 }
 /*La barra movil, si no te gusta quitala no hay problema*/
 .barra-movil img {
-  display: block;
   width: 20px;
-  margin-right: 90px; /* Añade espacio entre el icono y el texto */
+  margin-right:90px; /* Añade espacio entre el icono y el texto */
 }
 /*contiene las secciones, se oculta a menos que se toque el icono del menu desplegable*/
 .navegacion {
-  visibility: hidden;
-  height: 0;
-  opacity: 0;
+  display: none;
   transition: opacity 0.5s ease-in-out;
   flex: 1;
-  margin-bottom: 15px;
 }
 /*Al estar en modo telefono, se hace visible el menu*/
 .mostrar {
   visibility: visible;
+  display: block;
   height: auto;
   opacity: 1;
 }
 /*Pues los estilos jajaj*/
 .navegacion a {
   margin: 0 15px;
+  margin-bottom: 0;
   color: white;
   text-decoration: none;
 }
@@ -84,32 +83,44 @@ center y center para centrar los elementos dentro de este div*/
 /*los icnoso y sus estilos*/
 .sesion a {
   color: white;
-  margin: 0 5px;
+  margin: 0;
   font-size: 18px;
   text-decoration: none;
 }
 /*se iluminan tambien*/
 .sesion a:hover {
-  color: #ffd700;
+  color:red;
 }
+.menu-movil{
+  display: block;
+  list-style: none;padding: 0 20px;
+  margin: 0;
+  text-align: start;
+}
+.menu-movil li{
+  padding: 10px;
+  padding-left: 0;
+  width: 100%;
+}
+
+
 /*Media queries responsivos*/
 @media (min-width: 768px) {
   /*Al estar en pantallas mas grandes, la direccion del flex es row para que se muestren de izquierda a derecha los elemntos dentro del div*/
   .header .contenedor {
     flex-direction: row;
   }
-  /*Al estar en pantallas mas grandes, sera siempre visible la barra de navegacion normal*/
-  .navegacion {
-    margin-bottom: 0px;
-    visibility: visible;
-    opacity: 1;
-    height: auto;
+  .navegacion{
+    display: flex;
   }
-  /*AL estar en pantallas mas grandes, se oculta*/
   .barra-movil {
     display: none;
   }
+  .menu-movil{
+    display: none;
+  }
 }
+
 
 /*NOTICIAS BARRA PRINCIPAL*/
 /*En esta seccion de noticias, pasa algo similiar, un div contiene otro div que es la seccion principal del home, este div tiene dentro un div llamado noticias, dentro de noticias existen las noticia principal y las secundairas,
